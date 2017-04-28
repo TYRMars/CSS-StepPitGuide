@@ -17,3 +17,10 @@
 * flout(flout),flex(三行两列自适应)
 
 #### display
+* 设置元素显示方式
+* display:block/inline/inline-block/none
+
+##### display:block
+* 默认宽度为父元素宽度
+* 可设置宽高
+* 换行显示
