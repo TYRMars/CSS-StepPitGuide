@@ -19,14 +19,27 @@
 * position(轮播头图、遮罩、三行自适应性布局)
 * float(float),flex(三行两列自适应)
 
-#### display
+## 02-02
+### display
 * 设置元素显示方式
 * display:block/inline/inline-block/none
 
-##### display:block
+### display:block
 * 默认宽度为父元素宽度
 * 可设置宽高
 * 换行显示
+
+## 02-03
+### position
+* position:static/relative/absolute/fixed/grid
+* 默认为static静止
+
+### position:relative
+* 相对定位
+
+### postion:absolute
+* 绝对定位
+
 
 ---
 
