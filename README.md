@@ -7,9 +7,14 @@
 ## 第一章 CSS基本知识
 
 * [01-01](https://github.com/TYRMars/CSSdisplay#01-01) `CSS介绍`
+
 ## 第二章 CSS布局
 
 * [02-01](https://github.com/TYRMars/CSSdisplay#02-01) `CSS布局`
+* [02-02](https://github.com/TYRMars/CSSdisplay#02-02) `display`
+* [02-03](https://github.com/TYRMars/CSSdisplay#02-03) `position`
+* [02-04](https://github.com/TYRMars/CSSdisplay#02-04) `float`
+* [02-05](https://github.com/TYRMars/CSSdisplay#02-05) `常用布局`
 
 ---
 
@@ -39,6 +44,30 @@
 
 ### postion:absolute
 * 绝对定位
+
+## 02-04
+### float
+
+## 02-05
+### 常用布局
+
+#### 布局方案-剧中布局
+
+##### 水平居中布局
+
+* inline-block + text-align
+
+```CSS
+/*与内容同宽*/
+.parent{
+  text-align: center;
+}
+.child{
+  display: inline-block;
+}
+```
+
+* table+margin
 
 
 ---
