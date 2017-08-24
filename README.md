@@ -67,8 +67,110 @@
 }
 ```
 
-* table+margin
+* table + margin
 
+```CSS
+.child{
+  display: table;
+  margin: 0 auto;
+}
+```
+
+* absolute + transform
+
+```CSS
+.parent{
+  position: relative;
+}
+.child{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+```
+
+* flex + justify-content
+
+```CSS
+.parent{
+  display: flex;
+}
+.child{
+  margin: 0 auto;
+}
+```
+
+#### 垂直居中
+
+* table-cell + vertical-align
+
+```CSS
+.parent{
+  display: table-cell;
+  vertical-align: middle;
+}
+```
+
+* absolute + transform
+
+```CSS
+.parent{
+  position: relative;
+}
+.child{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+```
+
+* flex + align-items
+
+```CSS
+.parent{
+  display: flex;
+  align-items: center;
+}
+```
+
+#### 居中
+
+* inline-block + text-align + table-cell + vertical-align
+
+```CSS
+.parent{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.child{
+  display: inline-block;
+}
+```
+
+* absolute + transform
+
+```CSS
+.parent{
+  position: relative;
+}
+.child{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+```
+
+* flex + justify-content + align-items
+
+```CSS
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
 
 ---
 
