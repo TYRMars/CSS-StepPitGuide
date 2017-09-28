@@ -27,7 +27,7 @@
 ## 02-02
 ### display
 * 设置元素显示方式
-* display:block/inline/inline-block/none
+* display:block/inline/inline-block/none/grid
 
 ### display:block
 * 默认宽度为父元素宽度
@@ -36,7 +36,7 @@
 
 ## 02-03
 ### position
-* position:static/relative/absolute/fixed/grid
+* position:static/relative/absolute/fixed
 * 默认为static静止
 
 ### position:relative
