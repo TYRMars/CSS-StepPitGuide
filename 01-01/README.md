@@ -60,4 +60,5 @@ h1{
 
 # <style>
 
-* 还可以在HTML页面添加CSS规则，这时需要将规则写在<style>元素内
+* 还可以在HTML页面添加CSS规则，这时需要将规则写在<style>元素内，<style>元素通常位于页面的<head>元素中。
+* <style>元素应该使用`type`特性来表明这些演示实在CSS中
