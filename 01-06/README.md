@@ -86,6 +86,8 @@ body{
 * 默认宽度是内容宽度
 * 不可设置宽高度
 * 同行显示
+* 默认`display:inline`元素
+  - span|a|label|cite|em
 
 ```html
 <!DOCTYPE html>
@@ -100,9 +102,130 @@ body{
     </style>
   </head>
   <body>
-    <span>inline之的元素</span>
+    <span>inline之前的元素</span>
     <span class="sample">display:inline;</span>
     <em>inline之后的元素</em>
+  </body>
+</html>
+```
+
+# display:inline-block
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/display/display_inline-block.png" /></p>
+
+* 默认宽度为内容宽度
+* 可设置宽高
+* 同行显示
+* 整块换行
+* 默认`display:inline`元素
+  - input|textarea|select|button
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dispay inline-block</title>
+    <style media="screen">
+    .samlpe{background-color:pink}
+    .sample{display: inline-block}
+    </style>
+  </head>
+  <body>
+    <span>inline-block之前的元素</span>
+    <span class="sample"></span>
+    <em>inline-block之后的元素</em>
+  </body>
+</html>
+```
+
+# block VS inline VS inline-block
+
+| display | 默认宽度 | 可设置宽高 | 起始位置 |
+| :------------- | :------------- | :------------- | :------------- |
+| block   | 父级元素宽度  | 是  |  换行 |
+|inline   | 内容宽度  | 否  | 同行  |
+|inline-block   | 内容宽度  | 是  | 同行 |
+
+# display:none
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/display/display_none.png" /></p>
+
+* 设置元素不显示
+* display:none VS visibility:hidden
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>display none demo</title>
+    <style media="screen">
+      .parent{margin: 30px;border: 1px solid pink}
+      .dn{display: none;}
+      .vn{visibility: hidden;}
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="dn">
+        display:none
+      </div>
+    </div>
+    <div class="parent">
+      <div class="vn">
+        visibility:hidden
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+# 布局-块级元素水平居中
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>布局-块级元素水平居中</title>
+    <style media="screen">
+    .content{margin:0 auto;}
+    .content{width: 300px;height: 300px;background-color: pink}
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="content">
+        content区域
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+# 布局-居中导航
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>布局-居中导航</title>
+    <style media="screen">
+      ul{text-align: center;height: 30px;line-height: 30px;}
+      li,a{display: inline-block;width: 80px;height: 100%;}
+      li{margin: 0 10px;}
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">页面一</a></li>
+      <li><a href="#">页面二</a></li>
+      <li><a href="#">页面三</a></li>
+      <li><a href="#">页面四</a></li>
+    </ul>
   </body>
 </html>
 ```
