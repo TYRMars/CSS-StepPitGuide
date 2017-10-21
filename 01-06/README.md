@@ -49,7 +49,7 @@ body{
 
 # display:block
 
-
+<p align="center"><img src="http://pic2.orsoon.com/2016/1108/20161108044419740.png" /></p>
 
 * 块级元素
 * 默认宽度为父元素宽度
@@ -75,6 +75,34 @@ body{
       display:block;
     </div>
     <span>block之后的元素</span>
+  </body>
+</html>
+```
+
+# display:inline
+
+<p align="center"><img src="http://pic2.orsoon.com/2016/1108/20161108044419740.png" /></p>
+
+* 默认宽度是内容宽度
+* 不可设置宽高度
+* 同行显示
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>display inline demo</title>
+    <style>
+    .sample{background-color: pink}
+    /*.sample{width: 200px;height: 200px}*/
+    em{display: block;}
+    </style>
+  </head>
+  <body>
+    <span>inline之的元素</span>
+    <span class="sample">display:inline;</span>
+    <em>inline之后的元素</em>
   </body>
 </html>
 ```
