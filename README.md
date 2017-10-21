@@ -2,25 +2,24 @@
 
 <h1 align="center">CSS学习</h1>
 
-<p align="center"><img src="http://static.open-open.com/lib/uploadImg/20160531/20160531144659_234.jpg" /></p>
-
-
 ---
 
 # 目录
 ## 第一章 CSS基本知识
 
-* [01-01](https://github.com/TYRMars/CSSdisplay#01-01) `CSS介绍`
-* [01-02](https://github.com/TYRMars/CSSdisplay#01-02) `选择器`
-* [01-03](https://github.com/TYRMars/CSSdisplay#01-03) `文本`
-* [01-04](https://github.com/TYRMars/CSSdisplay#01-04) `盒模型`
-* [01-05](https://github.com/TYRMars/CSSdisplay#01-05) `背景`
-* [01-06](https://github.com/TYRMars/CSSdisplay#01-06) `布局`
-* [01-07](https://github.com/TYRMars/CSSdisplay#01-07) `变形`
-* [01-08](https://github.com/TYRMars/CSSdisplay#01-07) `动画`
+* [01-01](https://github.com/TYRMars/CSSLearn/tree/master/01-01) `CSS介绍`
+* [01-02](https://github.com/TYRMars/CSSLearn/tree/master/01-02) `选择器`
+* [01-03](https://github.com/TYRMars/CSSLearn/tree/master/01-03) `文本`
+* [01-04](https://github.com/TYRMars/CSSLearn/tree/master/01-04) `盒模型`
+* [01-05](https://github.com/TYRMars/CSSLearn/tree/master/01-05) `背景`
+* [01-06](https://github.com/TYRMars/CSSLearn/tree/master/01-06) `布局`
+* [01-07](https://github.com/TYRMars/CSSLearn/tree/master/01-07) `变形`
+* [01-08](https://github.com/TYRMars/CSSLearn/tree/master/01-08) `动画`
 
 ## 第二章 CSS布局实例
 
-* [02-01](https://github.com/TYRMars/CSSdisplay#02-01) `CSS布局-实现居中`
+* [02-01](https://github.com/TYRMars/CSSLearn/tree/master/02-01) `CSS布局-实现居中`
 
 ---
+
+<p align="center"><img src="http://static.open-open.com/lib/uploadImg/20160531/20160531144659_234.jpg" /></p>

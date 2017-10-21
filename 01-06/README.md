@@ -49,7 +49,7 @@ body{
 
 # display:block
 
-<p align="center"><img src="http://pic2.orsoon.com/2016/1108/20161108044419740.png" /></p>
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/display/display_block.png" /></p>
 
 * 块级元素
 * 默认宽度为父元素宽度
@@ -81,7 +81,7 @@ body{
 
 # display:inline
 
-<p align="center"><img src="http://pic2.orsoon.com/2016/1108/20161108044419740.png" /></p>
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/display/display_inline.png" /></p>
 
 * 默认宽度是内容宽度
 * 不可设置宽高度
