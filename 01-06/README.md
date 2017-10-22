@@ -274,11 +274,158 @@ body{
 
 # z-index
 
-# position:relative
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/z-index.png" /></p>
 
-<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_relative.png" /></p>
+* Z轴上下排序，父级元素相同的情况下，值越大越在上面👆
+
+## z-index 栈
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/z-index2.png" /></p>
+
+* Z轴上下排序，不同父级元素相同的情况下，要根据父级情况而定
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>z-index</title>
+    <style media="screen">
+      .sample0, .sample1{
+        position: absolute;
+        width: 200px;
+        line-height: 150px;
+        text-align: center;
+      }
+      .sample0{
+        background-color: #ff0;
+      }
+      .sample1{
+        background-color: pink;
+      }
+      .sample1{
+        top: 100px;
+        left: 100px;
+      }
+      /*
+      .container0,.container1{
+      position:relative
+      }
+      .container1{
+      z-index:99;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <div class="container0">
+      <div class="sample0">
+        sample0
+      </div>
+    </div>
+    <div class="container1">
+      <div class="sample1">
+        sample1
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+# position:relative
+## 相对定位
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_absolute_relative.png" /></p>
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_relative2.png" /></p>
 
 * 仍在文档流中
 * 参照物为元素本身
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>相对定位</title>
+    <style media="screen">
+      .container{
+        width: 400px;
+        line-height: 2;
+        border: 1px dashed #aaa;
+      }
+      .sample{
+        background-color: pink;
+        position: relative;
+        top: 20px;
+        left: -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>相对定位元素的前序元素</div>
+      <div class="sample">
+        sample
+      </div>
+      <div>相对定位元素的后序元素</div>
+    </div>
+  </body>
+</html>
+```
+
+* 使用场景：绝对定位元素的参照物
+
+# position_absolute
+## 绝对定位
+
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_absolute_relative.png" /></p>
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_absolute2.png" /></p>
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_absolute3.png" /></p>
+
+* 默认宽度为内容宽度
+* 默认脱离文档流
+* 参照物为第一个定位祖先/根元素
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>绝对定位</title>
+    <style media="screen">
+    .container{
+      width: 400px;
+      margin: 200px;
+      line-height: 2;
+      border: 1px dashed #aaa;
+    }
+    .sample{
+      background-color: pink;
+    }
+    .sample{
+      position: absolute;
+    }
+    /*.sample{
+      bottom: 10px;
+      left: -30px;
+    }
+    .container{
+      position: relative;
+    }*/
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>绝对定位元素的前序元素</div>
+      <div class="sample">
+        sample
+      </div>
+      <div>绝对定位元素的后序元素</div>
+    </div>
+  </body>
+</html>
+```
