@@ -215,13 +215,20 @@ body{
     <style media="screen">
       ul{text-align: center;height: 30px;line-height: 30px;}
       li,a{display: inline-block;width: 80px;height: 100%;}
-      li{margin: 0 10px;}
+      li{margin: 0 5px;list-style: none;}
+      a, a:hover, li.cur a{
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover, li.cur a{
+
+      }
     </style>
   </head>
   <body>
-    <ul>
+    <ul class="m-nav">
       <li><a href="#">首页</a></li>
-      <li><a href="#">页面一</a></li>
+      <li class="cur"><a href="#">页面一</a></li>
       <li><a href="#">页面二</a></li>
       <li><a href="#">页面三</a></li>
       <li><a href="#">页面四</a></li>
@@ -229,3 +236,49 @@ body{
   </body>
 </html>
 ```
+
+## 01-06-02
+### position 定位
+
+* position - 设置定位方式
+* top、right、bottom、left、z-index -设置位置
+
+# top/right/bottom/left
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/top_right_bottom_left.png" /></p>
+
+* top是上边缘与参照物的距离
+* right是右边缘与参照物的距离
+* bottom是下边缘与参照物的距离
+* left是左边缘与参照物的距离
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>位置</title>
+    <style media="screen">
+      .sample{background-color: pink;}
+      .sample{position: absolute;}
+      .sample{top: 30px;left: 30px;}
+    </style>
+  </head>
+  <body>
+    <div class="sample">
+      sample
+    </div>
+  </body>
+</html>
+```
+
+# z-index
+
+# position:relative
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_relative.png" /></p>
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_relative2.png" /></p>
+
+* 仍在文档流中
+* 参照物为元素本身
