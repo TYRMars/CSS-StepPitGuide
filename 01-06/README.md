@@ -552,3 +552,18 @@ body{
 ```
 
 ## 固定定位应用场景
+
+* 布局-固定顶栏
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>固定顶栏</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+```
