@@ -213,7 +213,7 @@ body{
     <meta charset="utf-8">
     <title>布局-居中导航</title>
     <style media="screen">
-      ul{text-align: center;height: 30px;line-height: 30px;}
+      ul{text-align: center;height: 30px;line-height: 30px;background-color: #f00;}
       li,a{display: inline-block;width: 80px;height: 100%;}
       li{margin: 0 5px;list-style: none;}
       a, a:hover, li.cur a{
@@ -221,7 +221,7 @@ body{
         text-decoration: none;
       }
       a:hover, li.cur a{
-
+        background-color: #c00;
       }
     </style>
   </head>
@@ -376,7 +376,7 @@ body{
 
 * 使用场景：绝对定位元素的参照物
 
-# position_absolute
+# position:absolute
 ## 绝对定位
 
 
@@ -429,3 +429,126 @@ body{
   </body>
 </html>
 ```
+
+## 绝对定位应用场景
+
+* 轮播头图
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>轮播头图</title>
+    <style media="screen">
+      .is{
+        position: relative;
+        width: 480px;
+      }
+      .is img{
+        display: block;
+      }
+      .is .title{
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+        line-height: 45px;
+        background-color: #000;
+        opacity: 0.7;
+      }
+      .is .title a{
+        margin-left: 20px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .is .controls{
+        position: absolute;
+        bottom: 18px;
+        right: 10px;
+        line-height: 10px;
+      }
+      .is .controls span{
+        display: inline-block;
+        width: 10px;
+        margin: auto 1px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: gray;
+      }
+      .is .controls span.cur{
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="is">
+      <img src="./time1.jpg" alt="img">
+      <p class="title">
+        <a href="#">Mac stay hungry stay foolish</a>
+      </p>
+      <div class="controls">
+        <span></span>
+        <span class="cur"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+# position:fixed
+## 固定定位
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_fixed.png" /></p>
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/position/position_fixed2.png" /></p>
+
+
+* 默认宽度为内容宽度
+* 脱离文档流
+* 参照物为视窗
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fixed定位</title>
+    <style media="screen">
+      .container{
+        width: 400px;
+        margin: 200px;
+        line-height: 2;
+        border: 1px dashed #aaa;
+      }
+      .sample{
+        background-color: pink;
+      }
+      .sample{
+        position: fixed;
+      }
+      .sample{
+        bottom: 0;
+        left: 10px;
+      }
+      .container{
+        height: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div>----------------</div>
+        <div class="sample">
+          sample
+        </div>
+        <div>----------------</div>
+    </div>
+  </body>
+</html>
+```
+
+## 固定定位应用场景
