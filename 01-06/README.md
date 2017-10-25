@@ -557,13 +557,129 @@ body{
 
 ```html
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>固定顶栏</title>
+    <style media="screen">
+      body{
+        margin: 0;
+        line-height: 1.8;
+      }
+      .top{
+        background-color: pink;
+        color: #fff;
+      }
+      .main{
+        height: 3000px;
+        background-color: #eee;
+      }
+      body{
+        padding-top: 50px;
+      }
+      .top{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 50px;
+      }
+    </style>
   </head>
   <body>
+    <div class="top">
+      top bar
+    </div>
+    <div class="main">
+      main content area
+    </div>
+  </body>
+</html>
+```
 
+* 布局-遮罩
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>遮罩</title>
+    <style media="screen">
+      .mask{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.3;
+      }
+      .content{
+        height: 3000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mask">
+
+    </div>
+    <div class="content">
+      content area
+    </div>
+  </body>
+</html>
+```
+
+* 布局-三行中间自适应布局
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>三行自适应布局布局</title>
+    <style media="screen">
+      .head{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #ccc;
+      }
+      .body{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        bottom: 100px;
+        right: 0;
+        overflow: auto;
+      }
+      .content{
+        height: 2000px;
+      }
+      .foot{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      head
+    </div>
+    <div class="content">
+      content area
+    </div>
+    <div class="foot">
+      foot
+    </div>
   </body>
 </html>
 ```
