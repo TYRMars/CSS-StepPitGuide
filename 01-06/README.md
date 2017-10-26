@@ -4,10 +4,17 @@
 * 布局-将元素以正确的大小摆放在正确的位置上
 
 ## 目录
-* [01-06-01]()
+* [01-06-01]('https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-01')`display`
+* [01-06-02]('https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-02')`position`
+* [01-06-03]('https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-03')`float`
 
 ## 01-06-01
 ### display
+
+* [01-06-01-01]('https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-01-01')`display:block`
+* [01-06-01-02]('https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-01-02')`display:inline`
+* [01-06-01-03]('https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-01-03')`display:inline-block`
+* [01-06-01-04]('https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-01-04')`display:none`
 
 * 设置元素的显示方式
 * display: none | inline | block | list-item | inline-list-item | inline-block | inline-table | table | table-cell | table-column | table-column-group | table-footer-group | table-header-group | table-row | table-row-group | flex | inline-flex | grid | inline-grid | run-in | ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container | contents
@@ -47,6 +54,7 @@ body{
 }
 ```
 
+## 01-06-01-01
 # display:block
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/display/display_block.png" /></p>
@@ -79,6 +87,7 @@ body{
 </html>
 ```
 
+## 01-06-01-02
 # display:inline
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/display/display_inline.png" /></p>
@@ -108,7 +117,7 @@ body{
   </body>
 </html>
 ```
-
+## 01-06-01-03
 # display:inline-block
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/display/display_inline-block.png" /></p>
@@ -147,6 +156,7 @@ body{
 |inline   | 内容宽度  | 否  | 同行  |
 |inline-block   | 内容宽度  | 是  | 同行 |
 
+## 01-06-01-04
 # display:none
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/display/display_none.png" /></p>
@@ -683,3 +693,9 @@ body{
   </body>
 </html>
 ```
+## 01-06-03
+# float
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/float/float.png" /></p>
+
+* 
