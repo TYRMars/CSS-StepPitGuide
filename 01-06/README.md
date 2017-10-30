@@ -21,36 +21,36 @@
 
 ```CSS
 body{
-  display: none
+  display: none;
 
-  display: inline
-  display: block
-  display: contents
-  display: list-item
-  display: inline-block
-  display: inline-table
-  display: table
-  display: table-cell
-  display: table-column
-  display: table-column-group
-  display: table-footer-group
-  display: table-header-group
-  display: table-row
-  display: table-row-group
-  display: flex
-  display: inline-flex
-  display: grid
-  display: inline-grid
-  display: ruby
-  display: ruby-base
-  display: ruby-text
-  display: ruby-base-container
-  display: ruby-text-container
-  display: run-in
+  display: inline;
+  display: block;
+  display: contents;
+  display: list-item;
+  display: inline-block;
+  display: inline-table;
+  display: table;
+  display: table-cell;
+  display: table-column;
+  display: table-column-group;
+  display: table-footer-group;
+  display: table-header-group;
+  display: table-row;
+  display: table-row-group;
+  display: flex;
+  display: inline-flex;
+  display: grid;
+  display: inline-grid;
+  display: ruby;
+  display: ruby-base;
+  display: ruby-text;
+  display: ruby-base-container;
+  display: ruby-text-container;
+  display: run-in;
 
-  display: inherit
-  display: initial
-  display: unset
+  display: inherit;
+  display: initial;
+  display: unset;
 }
 ```
 
@@ -698,4 +698,84 @@ body{
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/float/float.png" /></p>
 
-*
+* float:left|right|none
+* 默认宽度为内容宽度
+* 脱离文档流
+* 向指定方向一直移动
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        div{line-height: 50px;}
+        .sample{
+            background-color: yellow;
+            float:left;
+        }
+        .sb0{background-color: red}
+        .sb1{background-color: blue}
+        .div1{background-color: yellow;
+            float:left;}
+        .div2{background-color: red;
+            float:left;}
+        .div3{background-color: blue;}
+    </style>
+</head>
+<body>
+<div class="sb0">&nbsp;</div>
+<div class="sample">sample</div>
+<div class="sb1">&nbsp;</div>
+<HR>
+<div class="divs">
+    <div class="div1">123</div>
+    <div class="div2">123</div>
+    <div class="div3">123</div>
+</div>
+<div style="clear: both"></div>
+<HR>
+</body>
+</html>
+```
+
+* float元素半脱离文档流
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        div{line-height: 50px;}
+        .sample{
+            background-color: yellow;
+            float:left;
+        }
+        .sb0{background-color: red}
+        .sb1{background-color: blue}
+        .div1{background-color: yellow;
+            float:left;}
+        .div2{background-color: red;
+            float:left;}
+        .div3{background-color: blue;}
+    </style>
+</head>
+<body>
+<div class="sb0">&nbsp;</div>
+<div class="sample">sample</div>
+<div class="sb1">&nbsp;</div>
+<HR>
+<div class="divs">
+    <div class="div1">123</div>
+    <div class="div2">123</div>
+    <div class="div3">123</div>
+</div>
+<div style="clear: both"></div>
+<HR>
+
+</body>
+</html>
+```
