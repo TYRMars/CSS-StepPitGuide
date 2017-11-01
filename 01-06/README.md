@@ -7,6 +7,8 @@
 * [01-06-01](https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-01)`display`
 * [01-06-02](https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-02)`position`
 * [01-06-03](https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-03)`float`
+* [01-06-04](https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-04)`flex`
+* [01-06-05](https://github.com/TYRMars/CSSLearn/tree/master/01-06#01-06-05)`grid`
 
 ## 01-06-01
 ### display
@@ -698,4 +700,52 @@ body{
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/float/float.png" /></p>
 
-*
+
+
+## 01-06-04
+
+* 元素为`flex container`flex容器
+* `flex item`弹性元素
+* `main axis `主轴
+* `cross axis`副轴
+
+### 创建flex container
+
+* `display:flex`
+* `flex item`
+  - 只有在文档流中的子元素是flex item
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flex</title>
+  </head>
+  <body>
+    <div style="display:flex">
+      <div>block</div>
+      <div style="flout:left;">float</div>
+      <span>inline</span>
+      <div style="position:absolute;"></div>
+      <div>
+        <div>grandson</div>
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+# flex
+
+* 方向
+* 弹性
+* 对齐
+
+## 方向
+
+| flex-direction | 弹性方向 |
+| :------------- | :------------- |
+| flex-warp  | 弹性换行    |
+| flex-flow   | 弹性的流  |
+| order  | 弹性的顺序  |
