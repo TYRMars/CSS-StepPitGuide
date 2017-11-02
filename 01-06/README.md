@@ -831,8 +831,216 @@ body{
 </html>
 ```
 
-## flex-direction
+## flex-direction 弹性方向
 
 * flex-direction:row|row-reverse|column|column-reverse
+* 行正向|行反向|列正向|列反向
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/flex/flex_direction.png" /></p>
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>flex direction</title>
+	<style>
+		.container{
+			margin: 20px;
+			line-height: 40px;
+			font-size: 20px;
+			color: #fff;
+			background-color: #963297;
+		}
+		.item{
+			margin: 10px;
+			line-height: 40px;
+			text-align: center;
+			background-color: #c99702;
+		}
+		.container0 .item, .container1 .item{padding: 0 12px;}
+
+		.container{display: flex;}
+		.container1{flex-direction: row-reverse;}
+		.container2{flex-direction: column}
+		.container3{flex-direction: column-reverse}
+	</style>
+</head>
+<body>
+	<div class="container container0">
+	  <div class="item">1</div>
+	  <div class="item">2</div>
+	  <div class="item">3</div>
+	</div>
+	<div class="container container1">
+	  <div class="item">1</div>
+	  <div class="item">2</div>
+	  <div class="item">3</div>
+	</div>
+	<div class="container container2">
+	  <div class="item">1</div>
+	  <div class="item">2</div>
+	  <div class="item">3</div>
+	</div>
+	<div class="container container3">
+	  <div class="item">1</div>
+	  <div class="item">2</div>
+	  <div class="item">3</div>
+	</div>
+</body>
+</html>
+```
+
+## flex-wrap 弹性换行
+
+* flex-wrap: nowrap|wrap|wrap-reverse
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>flex wrap</title>
+	<style>
+		.container{
+			width: 400px;
+			margin: 20px;
+			line-height: 40px;
+			font-size: 20px;
+			color: #fff;
+			background-color: #963297;}
+		.item{
+			margin: 10px;
+			width: 100px;
+			line-height: 40px;
+			text-align: center;
+			background-color: #c99702;
+		}
+
+		.container{display: flex;}
+		.container1{flex-wrap: wrap;}
+		.container2{flex-wrap: wrap-reverse;}
+	</style>
+</head>
+<body>
+	<div class="container container0">
+	  <div class="item">1</div>
+	  <div class="item">2</div>
+	  <div class="item">3</div>
+	  <div class="item">4</div>
+	  <div class="item">5</div>
+	</div>
+	<div class="container container1">
+	  <div class="item">1</div>
+	  <div class="item">2</div>
+	  <div class="item">3</div>
+	  <div class="item">4</div>
+	  <div class="item">5</div>
+	</div>
+	<div class="container container2">
+	  <div class="item">1</div>
+	  <div class="item">2</div>
+	  <div class="item">3</div>
+	  <div class="item">4</div>
+	  <div class="item">5</div>
+	</div>
+</body>
+</html>
+```
+
+## flex-flow
+
+* `flex-flow:<'flex-direction'>||<'flex-wrap'>`
+* 联合使用以上元素
+
+## order
+
+* order:<interger>
+* initial:0 初始值是0
+* 元素排序
+
+# 弹性
+
+* flex-basis
+* flex-shrink
+* flex-grow
+
+## flex-basis
+
+* flex-basis:main-size|<width>
+* 设置flex item的初始宽/高
+
+## flex-grow
+
+* flex-grow:<number>
+* initial:0 初始值0
+* 设置元素分配到空余的距离
+
+#### `flex-basis + flex-grow/sum(flow-grow)*remain`
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>flex-grow</title>
+	<style>
+		.container{background-color: #963297;}
+		.item{margin: 10px;line-height: 40px;text-align: center;color: #fff;font-size: 20px;background-color: #c99702;}
+
+		.container{display: flex;}
+		/*.item{width: 100px;}*/
+		/*.item2{flex-basis: 300px;}*/
+		/*.item2{flex-grow: 1;}*/
+		/*.item3{flex-grow: 2;}*/
+		/*.item2, .item3{flex-basis: 0;}*/
+	</style>
+</head>
+<body>
+	<div class="container">
+	  <div class="item item1">1</div>
+	  <div class="item item2">2</div>
+	  <div class="item item3">3</div>
+	</div>
+</body>
+</html>
+```
+
+## flex-shrink
+
+* flex-shrink:<number>
+* initial:1
+
+#### `flex-basis + flex-shrink/sum(flow-shrink)*remain`
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>flex-shink</title>
+	<style>
+		.container{width: 600px;background-color: #963297;}
+		.item{margin: 10px;line-height: 40px;text-align: center;color: #fff;font-size: 20px;background-color: #c99702;}
+
+		.container{display: flex;}
+		/*.item{flex-shrink: 0;}*/
+		/*.item2{flex-shrink: 2;}*/
+	</style>
+</head>
+<body>
+	<div class="container">
+	  <div class="item item1">sets the flex shrink factor</div>
+	  <div class="item item2">sets the flex shrink factor</div>
+	  <div class="item item3">sets the flex shrink factor</div>
+	</div>
+</body>
+</html>
+```
+
+* 如果设置/*.item{flex-shrink: 0;}*/元素就会根据原有的大小超出指定区域
+
+# flex
+
+* flex:<'flex-grow'>||<'flex-shrink'>||<'flex-basis'>
+* initial: 0 1 main-size
