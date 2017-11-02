@@ -700,8 +700,6 @@ body{
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/float/float.png" /></p>
 
-<<<<<<< HEAD
-
 
 ## 01-06-04
 
@@ -832,4 +830,3 @@ body{
 </body>
 </html>
 ```
->>>>>>> 62b81632133c2373069bdd4f42ef832dafc6de54
