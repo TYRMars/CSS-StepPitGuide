@@ -830,3 +830,9 @@ body{
 </body>
 </html>
 ```
+
+## flex-direction
+
+* flex-direction:row|row-reverse|column|column-reverse
+
+<p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/flex/flex_direction.png" /></p>
