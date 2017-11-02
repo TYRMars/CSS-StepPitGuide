@@ -700,6 +700,46 @@ body{
 
 <p align="center"><img src="https://github.com/TYRMars/CSSLearn/blob/master/01-06/float/float.png" /></p>
 
+* float元素半脱离文档流
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        div{line-height: 50px;}
+        .sample{
+            background-color: yellow;
+            float:left;
+        }
+        .sb0{background-color: red}
+        .sb1{background-color: blue}
+        .div1{background-color: yellow;
+            float:left;}
+        .div2{background-color: red;
+            float:left;}
+        .div3{background-color: blue;}
+    </style>
+</head>
+<body>
+<div class="sb0">&nbsp;</div>
+<div class="sample">sample</div>
+<div class="sb1">&nbsp;</div>
+<HR>
+<div class="divs">
+    <div class="div1">123</div>
+    <div class="div2">123</div>
+    <div class="div3">123</div>
+</div>
+<div style="clear: both"></div>
+<HR>
+
+</body>
+</html>
+```
+
 
 ## 01-06-04
 
@@ -787,46 +827,6 @@ body{
 </div>
 <div style="clear: both"></div>
 <HR>
-</body>
-</html>
-```
-
-* float元素半脱离文档流
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>float</title>
-    <style>
-        div{line-height: 50px;}
-        .sample{
-            background-color: yellow;
-            float:left;
-        }
-        .sb0{background-color: red}
-        .sb1{background-color: blue}
-        .div1{background-color: yellow;
-            float:left;}
-        .div2{background-color: red;
-            float:left;}
-        .div3{background-color: blue;}
-    </style>
-</head>
-<body>
-<div class="sb0">&nbsp;</div>
-<div class="sample">sample</div>
-<div class="sb1">&nbsp;</div>
-<HR>
-<div class="divs">
-    <div class="div1">123</div>
-    <div class="div2">123</div>
-    <div class="div3">123</div>
-</div>
-<div style="clear: both"></div>
-<HR>
-
 </body>
 </html>
 ```
