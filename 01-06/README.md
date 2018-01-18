@@ -788,7 +788,8 @@ body{
 | flex-warp  | 弹性换行    |
 | flex-flow   | 弹性的流  |
 | order  | 弹性的顺序  |
-=======
+
+
 * float:left|right|none
 * 默认宽度为内容宽度
 * 脱离文档流
@@ -1042,5 +1043,5 @@ body{
 
 # flex
 
-* flex:<'flex-grow'>||<'flex-shrink'>||<'flex-basis'>
+* flex:`<'flex-grow'>||<'flex-shrink'>||<'flex-basis'>`
 * initial: 0 1 main-size
