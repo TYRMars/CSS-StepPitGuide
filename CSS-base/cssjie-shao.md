@@ -1,12 +1,12 @@
-# CSS基础介绍
+# CSS介绍
 
 * CSS通过将规则与HTML元素相关联的方式来工作。这些规则用来控制指定元素中的内容如何显示。
 * 一条CSS规则包含两个部分：一个选择器和一条声明。
 
-```CSS
+```css
 p{font-family: Arial;}
 ```
-## 01-01-01
+
 ### 使用外部CSS
 
 ## `<link>`
@@ -26,9 +26,9 @@ p{font-family: Arial;}
 
 * 该特性表明HTML页面与被链接文件的关系。当链接到一个`CSS`文件时，该特性的值应该为`stylesheet`。
 
-## HTML
+### HTML
 
-```HTML
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -42,9 +42,9 @@ p{font-family: Arial;}
 </html>
 ```
 
-## CSS `styles.css`
+#### CSS `styles.css`
 
-```CSS
+```css
 body{
   font-family: arial;
   background-color: rgb(185, 179, 175);
@@ -60,3 +60,6 @@ h1{
 
 * 还可以在HTML页面添加CSS规则，这时需要将规则写在`<style>`元素内，`<style>`元素通常位于页面的`<head>`元素中。
 * `<style>`元素应该使用`type`特性来表明这些演示实在CSS中
+
+
+
